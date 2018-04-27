@@ -1,0 +1,73 @@
+syntax = "proto3";
+
+package zjuintl;
+
+service ZJUintl {
+    rpc connect_test(Infosent) returns (Infoback) {}    
+    rpc getCourse(User) returns (Courses) {}
+    rpc getBBGradeList(User) returns (BBGradeList) {}
+    rpc getBBCertainGrade(BBGradeUser) returns (BBGradeItemList) {}
+}
+
+//rpc => getBBGradeList
+message BBGradeList {
+    string status = 1;
+    repeated BBCourseitem courses = 2;
+}
+
+message BBCourseitem {
+    string name = 1;
+    string grade = 2;
+    string courseid = 3;
+}
+
+//rpc => getBBCertainGrade
+message BBGradeUser {
+    string username = 1;
+    string password = 2;
+    string courseid = 3;
+}
+message BBGradeItemList {
+    string status = 1;
+    repeated BBGradeItem items = 2;
+}
+message BBGradeItem {
+    string name = 1;
+    string grade = 2;
+}
+
+
+//rpc => connect_test
+message Infosent {
+    string name = 1;
+}
+
+message Infoback {
+    string status = 1;
+    string message = 2;
+}
+
+
+//rpc => getCourse
+message User {
+    string username = 1;
+    string password = 2;
+}
+
+message Courses {
+    string status = 1;
+    repeated Course course = 2;
+}
+
+message Course {
+    string id = 1;
+    string name = 2;
+    string time = 3;
+    string type = 4;
+    string room = 5;
+    string instructor = 6;
+    string week = 7;
+    string month = 8;
+    string date = 9;
+    int32 weeknum = 10;
+}
