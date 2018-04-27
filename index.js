@@ -1,2 +1,2 @@
-module.exports = require('./lib/zju_auth');
-exports.default = require('./lib/zju_auth');
+module.exports = require('./lib/zju_intl');
+exports.default = require('./lib/zju_intl');
