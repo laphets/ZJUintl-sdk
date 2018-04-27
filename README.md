@@ -23,7 +23,7 @@ const ZJUintl = require('zjuintl-sdk')
 ```
 
 There are four methods available. 
-** All the methods will return a Promise.**
+**All the methods will return a Promise.**
 
 ### connectTest
 Just check whether you can connect to our service.
