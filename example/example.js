@@ -10,14 +10,14 @@ ZJUintl.getCourse({ username: '3170111705', password: '' }).then(res => {
     console.log(err);
 })
 
-ZJUintl.getBBGradeList({ username: '3170111705', password: '' }).then(res => {
-    console.log(res);
-}).catch(err => {
-    console.log(err);
-})
+// ZJUintl.getBBGradeList({ username: '3170111705', password: '' }).then(res => {
+//     console.log(res);
+// }).catch(err => {
+//     console.log(err);
+// })
 
-ZJUintl.getBBCertainGrade({ username: '3170111705', password: '', courseid: '_2823_1' }).then(res => {
-    console.log(res);
-}).catch(err => {
-    console.log(err);
-})
+// ZJUintl.getBBCertainGrade({ username: '3170111705', password: '', courseid: '_2823_1' }).then(res => {
+//     console.log(res);
+// }).catch(err => {
+//     console.log(err);
+// })
