@@ -1,6 +1,6 @@
 {
   "name": "zjuintl-sdk",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "A Node SDK for ZJU Intl Campus",
   "main": "index.js",
   "files": [

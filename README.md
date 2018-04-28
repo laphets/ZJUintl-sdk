@@ -27,6 +27,7 @@ There are four methods available.
 
 ### connectTest
 Just check whether you can connect to our service.
+
 Example:
 ```js
 ZJUintl.connectTest('Your name here').then(res => {
@@ -35,7 +36,8 @@ ZJUintl.connectTest('Your name here').then(res => {
 ```
 
 ### getCourse
-Get course list with schedule from *PeopleSoft*
+Get course list with schedule from *PeopleSoft*.
+
 Example:
 ```js
 ZJUintl.getCourse({ username: '3170111705', password: 'Corresponding password here' }).then(res => {
@@ -46,7 +48,8 @@ ZJUintl.getCourse({ username: '3170111705', password: 'Corresponding password he
 ```
 
 ### getBBGradeList
-Get course list with total score from *BlackBoard*
+Get course list with total score from *BlackBoard*.
+
 Example:
 ```js
 ZJUintl.getBBGradeList({ username: '3170111705', password: 'Corresponding password here' }).then(res => {
@@ -57,8 +60,9 @@ ZJUintl.getBBGradeList({ username: '3170111705', password: 'Corresponding passwo
 ```
 
 ### getBBCertainGrade
-Get a detail grade list for a certain course from *BlackBoard*
+Get a detail grade list for a certain course from *BlackBoard*.
 `courseid` is what you get from the `getBBGradeList` method.
+
 Example:
 ```js
 ZJUintl.getBBCertainGrade({ username: '3170111705', password: 'Corresponding password here', courseid: '_2823_1' }).then(res => {
