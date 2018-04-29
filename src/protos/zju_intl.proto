@@ -60,20 +60,28 @@ message Courses {
 }
 
 message Course {
-    string id = 1;
-    string name = 2;
-    string category = 3;
-    string place = 4;
-    string teacher = 5;
-    string week = 6;
-    string day = 7;
-    Time time = 8;
+    string fullid = 1;
+    string category = 2;
+    string id = 3;
+    string year = 4;
+    string name = 5;
+    string teacher = 6;
+    string semester = 7;
+    bool determined = 8;
+    repeated string place = 9;
+    repeated Time time = 10;
 }
 message Time {
-    ExactTime startTime = 1;
-    ExactTime endTime = 2;
+    int32 startTimeHour = 1;
+    int32 startTimeMinute = 2;
+    int32 endTimeHour = 3;
+    int32 endTimeMinute = 4;
+    repeated int32 time = 5;
+    repeated Week week = 6;
+    int32 day = 7;
+    string desc = 8;
 }
-message ExactTime {
-    int32 hour = 1;
-    int32 min = 2;
+message Week {
+    string type = 1;
+    repeated int32 weeks = 2;
 }
