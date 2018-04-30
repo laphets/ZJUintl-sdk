@@ -1,6 +1,6 @@
 export interface Course {
     status: string
-    course: CourseItem
+    course: CourseItem[]
 }
 
 export interface CourseItem {

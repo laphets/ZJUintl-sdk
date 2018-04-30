@@ -2,13 +2,13 @@
  * @Author: Laphets 
  * @Date: 2018-04-30 09:26:37 
  * @Last Modified by: Laphets
- * @Last Modified time: 2018-04-30 10:48:18
+ * @Last Modified time: 2018-04-30 11:42:21
  */
 
 
 const PROTO_PATH: string = __dirname + '/protos/zju_intl.proto';
 import * as grpc from 'grpc'
-import { config } from '../src/config'
+import { config } from './config'
 import {Course, ConnectTest, ErrType, User, BBGradeList, BBCertainGrade, UserBC} from './type/system'
 let protoDescriptor = grpc.load(PROTO_PATH);
 let zjuintl: any = protoDescriptor.zjuintl;
