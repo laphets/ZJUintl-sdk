@@ -2,7 +2,7 @@
  * @Author: Laphets 
  * @Date: 2018-04-30 09:26:37 
  * @Last Modified by: Laphets
- * @Last Modified time: 2018-04-30 11:42:21
+ * @Last Modified time: 2018-04-30 12:12:03
  */
 
 
@@ -52,7 +52,7 @@ export function connectTest(name : string, url : string = config.serviceURL) : P
  * @param {Object} user user information includes username and password
  * @param {string} url url of our grpc service
  */
-export function getCourse (user: User, url: string = config.serviceURL): Promise<ErrType | Course> {
+export function getCourse (user: User, url: string = config.serviceURL): Promise< Course > {
     return new Promise((resolve, reject) => {
         let client: any = new zjuintl.ZJUintl(url, grpc.credentials.createInsecure()); 
         client.getCourse({

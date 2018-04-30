@@ -10,7 +10,7 @@ export declare function connectTest(name: string, url?: string): Promise<Connect
  * @param {Object} user user information includes username and password
  * @param {string} url url of our grpc service
  */
-export declare function getCourse(user: User, url?: string): Promise<ErrType | Course>;
+export declare function getCourse(user: User, url?: string): Promise<Course>;
 /**
  * getBBGradeList
  * @param {Object} user user information includes username and password
