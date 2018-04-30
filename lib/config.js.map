@@ -1,1 +1,1 @@
-{"version":3,"sources":["../src/config.js"],"names":["config","serviceURL","module","exports"],"mappings":";;AAAA,IAAMA,SAAS;AACXC,gBAAY;AADD,CAAf;;AAIAC,OAAOC,OAAP,GAAiBH,MAAjB","file":"config.js","sourcesContent":["const config = {\n    serviceURL: '10.76.8.186:50053'\n}\n\nmodule.exports = config;"]}
+{"version":3,"file":"config.js","sourceRoot":"","sources":["config.ts"],"names":[],"mappings":";;AAAa,QAAA,MAAM,GAAG;IAClB,UAAU,EAAE,mBAAmB;CAClC,CAAA"}
