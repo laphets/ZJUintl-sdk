@@ -1,6 +1,6 @@
 {
   "name": "zjuintl-sdk",
-  "version": "1.2.7",
+  "version": "1.2.8",
   "description": "A Node SDK for ZJU Intl Campus",
   "main": "./lib/zju_intl.js",
   "types": "./lib/zju_intl.d.ts",

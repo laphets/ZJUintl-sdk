@@ -1,6 +1,8 @@
 # A Node SDK for ZJUintl gRPC Service
-
+A *Typescript* based project.
 > Use one line of code to access gRPC service for ZJUintl, which can provide you with the data including course information, exam details and exam scores etc.
+
+
 
 ## Install
 Make sure you have set registry for *QSC Private npm registry*.
