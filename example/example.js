@@ -6,7 +6,7 @@ const ZJUintl = require('../src/zju_intl');
 //     console.log(err);
 // })
 
-// ZJUintl.getCourse({ username: '3170111705', password: 'l3169856419' }).then(res => {
+// ZJUintl.getCourse({ username: '3170111705', password: '' }).then(res => {
 //     // console.log(JSON.stringify(res))
 // }).catch(err => {
 //     // console.log(err);
