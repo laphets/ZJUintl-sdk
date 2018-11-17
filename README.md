@@ -1,5 +1,6 @@
 # A Node SDK for ZJUintl gRPC Service
 THE LATEST PROTO FILE SHOULD BE FETCHED FROM PROTO SUBMODULE
+
 A **Typescript** based project.
 > Use one line of code to access gRPC service for ZJUintl, which can provide you with the data including course information, exam details and exam scores etc.
 
